@@ -14,85 +14,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="main.css">
 
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
-                    },
-                    colors: {
-                        brand: {
-                            50: '#f0fdfa',
-                            100: '#ccfbf1',
-                            400: '#2dd4bf',
-                            500: '#14b8a6',
-                            600: '#0d9488',
-                            900: '#134e4a',
-                        },
-                        accent: {
-                            purple: '#a855f7',
-                            cyan: '#06b6d4',
-                            emerald: '#10b981',
-                            amber: '#f59e0b',
-                        }
-                    },
-                    animation: {
-                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-                        'float': 'float 6s ease-in-out infinite',
-                    },
-                    keyframes: {
-                        float: {
-                            '0%, 100%': { transform: 'translateY(0px)' },
-                            '50%': { transform: 'translateY(-12px)' },
-                        }
-                    }
-                }
-            }
-        }
-    </script>
-    <style>
-        /* Custom Glowing & Glassmorphism Effects */
-        .glass-card {
-            background: rgba(15, 23, 42, 0.75);
-            backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
-            border: 1px solid rgba(255, 255, 255, 0.08);
-        }
-
-        .glass-card:hover {
-            border-color: rgba(45, 212, 191, 0.35);
-            box-shadow: 0 10px 30px -10px rgba(13, 148, 136, 0.25);
-        }
-
-        .gradient-text {
-            background: linear-gradient(135deg, #2dd4bf 0%, #38bdf8 50%, #a855f7 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        .gradient-border {
-            position: relative;
-            background: linear-gradient(135deg, #0d9488, #0284c7, #7c3aed);
-            padding: 2px;
-            border-radius: 1.25rem;
-        }
-
-        .gradient-border>div {
-            background: #090d16;
-            border-radius: calc(1.25rem - 2px);
-        }
-
-        .glow-bg {
-            position: absolute;
-            border-radius: 50%;
-            filter: blur(90px);
-            opacity: 0.25;
-            pointer-events: none;
-            z-index: 0;
-        }
-    </style>
 </head>
 
 <body
@@ -744,34 +668,8 @@
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 
-    <script>
-        // Mobile menu toggle
-        const menuBtn = document.getElementById('mobile-menu-btn')
-        const mobileMenu = document.getElementById('mobile-menu')
-        const mobileLinks = document.querySelectorAll('.mobile-link')
-
-        menuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden')
-        })
-
-        mobileLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.add('hidden')
-            })
-        })
-
-        // Project Modal logic
-        function openProjectModal(title, description) {
-            document.getElementById('modal-title').innerText = title
-            document.getElementById('modal-desc').innerText = description
-            document.getElementById('project-modal').classList.remove('hidden')
-        }
-
-        function closeProjectModal() {
-            document.getElementById('project-modal').classList.add('hidden')
-        }
-    </script>
 </body>
 
 </html>
