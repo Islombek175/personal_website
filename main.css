@@ -1,3 +1,8 @@
+/* Prevent horizontal overflow from glow backgrounds */
+html, body {
+	overflow-x: hidden;
+}
+
 /* Custom Glowing & Glassmorphism Effects */
 .glass-card {
 	background: rgba(15, 23, 42, 0.75);
