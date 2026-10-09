@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Islambek Matkarimov | Personal Portfolio</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="apple-touch-icon" href="images/favicon.svg">
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- FontAwesome Icons -->
@@ -28,8 +31,8 @@
     <div class="glow-bg w-[450px] h-[450px] bg-accent-cyan bottom-[5%] left-[20%] animate-pulse-slow"
         style="animation-delay: 1s;"></div>
 
-    <header
-        class="sticky top-0 z-50 backdrop-blur-xl bg-[#050811]/80 border-b border-slate-800/60 transition-all duration-300">
+    <header id="navbar"
+        class="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-[#050811]/85 border-b border-slate-800/60 transition-all duration-300">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
             <a href="#" class="flex items-center gap-3 group">
                 <div
@@ -47,20 +50,23 @@
 
             <!-- Desktop Nav Links -->
             <nav class="hidden md:flex items-center gap-1 lg:gap-2 text-sm font-medium text-slate-300">
-                <a href="#hero" class="px-3 py-2 rounded-lg hover:text-brand-400 hover:bg-slate-800/50 transition-all">
+                <a href="#hero"
+                    class="nav-link px-3 py-2 rounded-lg hover:text-brand-400 hover:bg-slate-800/50 transition-all">
                     Hero</a>
-                <a href="#about" class="px-3 py-2 rounded-lg hover:text-brand-400 hover:bg-slate-800/50 transition-all">
+                <a href="#about"
+                    class="nav-link px-3 py-2 rounded-lg hover:text-brand-400 hover:bg-slate-800/50 transition-all">
                     Men Haqimda</a>
                 <a href="#skills"
-                    class="px-3 py-2 rounded-lg hover:text-brand-400 hover:bg-slate-800/50 transition-all">
+                    class="nav-link px-3 py-2 rounded-lg hover:text-brand-400 hover:bg-slate-800/50 transition-all">
                     Ko'nikmalar</a>
                 <a href="#projects"
-                    class="px-3 py-2 rounded-lg hover:text-brand-400 hover:bg-slate-800/50 transition-all">
+                    class="nav-link px-3 py-2 rounded-lg hover:text-brand-400 hover:bg-slate-800/50 transition-all">
                     Loyihalar</a>
                 <a href="#education"
-                    class="px-3 py-2 rounded-lg hover:text-brand-400 hover:bg-slate-800/50 transition-all"> Ta'lim</a>
+                    class="nav-link px-3 py-2 rounded-lg hover:text-brand-400 hover:bg-slate-800/50 transition-all">
+                    Ta'lim</a>
                 <a href="#contact"
-                    class="px-3.5 py-2 rounded-lg bg-brand-500/10 text-brand-400 border border-brand-500/30 hover:bg-brand-500 hover:text-white transition-all font-semibold">
+                    class="nav-link px-3.5 py-2 rounded-lg bg-brand-500/10 text-brand-400 border border-brand-500/30 hover:bg-brand-500 hover:text-white transition-all font-semibold">
                     Aloqa</a>
             </nav>
 
@@ -95,7 +101,7 @@
         </div>
     </header>
 
-    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-20 space-y-24 relative z-10">
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-20 space-y-24 relative z-10">
 
         <section id="hero" class="pt-8 md:pt-16 pb-6">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -563,8 +569,7 @@
                                 </div>
                                 <div>
                                     <h4 class="text-white font-bold text-sm">Ingliz Tili (IELTS Tayyorgarlik)</h4>
-                                    <p class="text-xs text-slate-400 mt-0.5">Xalqaro hujjatlar va ta'lim uchun akademik
-                                        darajada muloqot</p>
+                                    <p class="text-xs text-slate-400 mt-0.5">Multi-Level B2+ darajada muloqot</p>
                                 </div>
                             </div>
                         </div>

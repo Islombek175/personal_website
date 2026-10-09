@@ -1,3 +1,5 @@
+// Tailwind CSS configuration
+
 tailwind.config = {
 	theme: {
 		extend: {
@@ -59,3 +61,40 @@ function openProjectModal(title, description) {
 function closeProjectModal() {
 	document.getElementById('project-modal').classList.add('hidden')
 }
+
+// Fixed navbar enhancement & active nav-link highlighting on scroll
+const navbar = document.getElementById('navbar')
+const sections = document.querySelectorAll('section[id]')
+const desktopNavLinks = document.querySelectorAll('.nav-link')
+
+window.addEventListener('scroll', () => {
+	const scrollPos = window.scrollY
+
+	// Add enhanced background/shadow when scrolled down
+	if (navbar) {
+		if (scrollPos > 30) {
+			navbar.classList.add('scrolled')
+		} else {
+			navbar.classList.remove('scrolled')
+		}
+	}
+
+	// Update active nav-link according to current visible section
+	let currentSectionId = ''
+	sections.forEach(section => {
+		const sectionTop = section.offsetTop - 120
+		const sectionHeight = section.offsetHeight
+		if (scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight) {
+			currentSectionId = section.getAttribute('id')
+		}
+	})
+
+	desktopNavLinks.forEach(link => {
+		const href = link.getAttribute('href')
+		if (href && href === `#${currentSectionId}`) {
+			link.classList.add('active-nav')
+		} else {
+			link.classList.remove('active-nav')
+		}
+	})
+})
