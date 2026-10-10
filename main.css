@@ -58,3 +58,20 @@ body {
 	box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.7);
 	border-bottom-color: rgba(51, 65, 85, 0.6);
 }
+
+/* Language Switcher Buttons */
+.lang-btn {
+	color: #94a3b8;
+}
+
+.lang-btn:hover {
+	color: #f1f5f9;
+}
+
+.lang-btn.active {
+	background: linear-gradient(135deg, rgba(20, 184, 166, 0.25), rgba(6, 182, 212, 0.25));
+	color: #2dd4bf;
+	border: 1px solid rgba(45, 212, 191, 0.4);
+	box-shadow: 0 0 12px -2px rgba(45, 212, 191, 0.35);
+}
+
