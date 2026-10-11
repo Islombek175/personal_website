@@ -159,6 +159,10 @@ const translations = {
 		edu_courses_badge: 'IT DASTURLASH KURSLARI',
 		edu_courses_desc:
 			"HTML, CSS, JS, Telegram Bot va Web loyihalar bo'yicha intensiv ta'lim",
+		edu_community_badge: "IT HAMJAMIYATI VA TA'LIM",
+		edu_community_name: '"Muhammad Al Xorazmiy vorislari" IT Park',
+		edu_community_desc:
+			"O'zbekistonda dasturiy ta'minot muhandisligi va zamonaviy texnologiyalar bo'yicha ilg'or ko'nikmalarni o'rgatuvchi IT hamjamiyati.",
 		edu_achievements_title: 'Yutuqlar & Sertifikatlar',
 		edu_sat_title: 'SAT Natijasi: 1340 Score',
 		edu_sat_desc: "Matematika va mantiqiy fikrlash bo'yicha yuqori ball",
@@ -237,6 +241,10 @@ const translations = {
 		edu_courses_badge: 'IT & CODING COURSES',
 		edu_courses_desc:
 			'Intensive training in HTML, CSS, JS, Telegram Bots, and Web projects',
+		edu_community_badge: 'IT COMMUNITY & TRAINING',
+		edu_community_name: '"Heirs of Muhammad al-Khwarizmi" IT Park',
+		edu_community_desc:
+			'An IT learning community in Uzbekistan focused on advanced software engineering and modern technology skills.',
 		edu_achievements_title: 'Achievements & Certificates',
 		edu_sat_title: 'SAT Score: 1340',
 		edu_sat_desc: 'High score in mathematics and analytical reasoning',
