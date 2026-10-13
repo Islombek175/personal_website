@@ -19,7 +19,6 @@
         rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="main.css">
-
 </head>
 
 <body
@@ -33,7 +32,7 @@
 
     <header id="navbar"
         class="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-[#050811]/85 border-b border-slate-800/60 transition-all duration-300">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
             <a href="#" class="flex items-center gap-3 group">
                 <div
                     class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-500 via-cyan-500 to-accent-purple p-[2px] transition-transform duration-300 group-hover:scale-105">
@@ -81,7 +80,7 @@
                     Loyihalar</a>
                 <a href="#education" data-i18n="nav_education"
                     class="nav-link px-3 py-2 rounded-lg hover:text-brand-400 hover:bg-slate-800/50 transition-all">
-                    Ta'lim</a>
+                    Ta'lim va Yutuqlar</a>
                 <a href="#contact" data-i18n="nav_contact"
                     class="nav-link px-3.5 py-2 rounded-lg bg-brand-500/10 text-brand-400 border border-brand-500/30 hover:bg-brand-500 hover:text-white transition-all font-semibold">
                     Aloqa</a>
@@ -135,11 +134,11 @@
         </div>
     </header>
 
-    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-20 space-y-24 relative z-10">
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-20 space-y-24 relative z-10">
 
+        <!-- Hero Section -->
         <section id="hero" class="pt-8 md:pt-16 pb-6">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-                <!-- Text Content -->
                 <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
                     <div
                         class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900/90 border border-brand-500/30 text-brand-400 text-xs sm:text-sm font-semibold tracking-wide">
@@ -156,7 +155,6 @@
                         Full-Stack Dasturchi &amp; Muhandislikka Qiziquvchi
                     </p>
 
-                    <!-- Tagline / Short Shior -->
                     <div
                         class="p-4 sm:p-5 rounded-2xl bg-slate-900/60 border border-slate-800/80 backdrop-blur-md relative overflow-hidden group">
                         <div
@@ -168,7 +166,6 @@
                         </p>
                     </div>
 
-                    <!-- Call to action buttons -->
                     <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2">
                         <a href="#projects"
                             class="px-6 py-3.5 rounded-xl bg-gradient-to-r from-brand-500 via-cyan-500 to-blue-600 text-white font-bold hover:shadow-lg hover:shadow-brand-500/25 transition-all duration-300 transform hover:-translate-y-0.5 flex items-center gap-2">
@@ -183,10 +180,8 @@
                     </div>
                 </div>
 
-                <!-- Avatar / Visual Container -->
                 <div class="lg:col-span-5 flex justify-center">
                     <div class="relative w-64 h-64 sm:w-80 sm:h-80 animate-float">
-                        <!-- Colorful Ring -->
                         <div
                             class="absolute inset-0 rounded-3xl bg-gradient-to-tr from-brand-500 via-accent-cyan to-accent-purple opacity-70 blur-xl animate-pulse">
                         </div>
@@ -197,7 +192,8 @@
                                 <div
                                     class="w-28 h-28 sm:w-36 sm:h-36 rounded-2xl overflow-hidden border border-slate-700/80 shadow-inner">
                                     <img src="images/my_photo.jpg" alt="Islambek Matkarimov"
-                                        class="w-full h-full object-cover">
+                                        class="w-full h-full object-cover"
+                                        onerror="this.src='https://placehold.co/150x150/134e4a/2dd4bf?text=I'">
                                 </div>
                                 <div>
                                     <h3 class="text-white font-bold text-lg">Islambek Developer</h3>
@@ -236,7 +232,6 @@
                     </div>
                 </div>
 
-                <!-- 3-4 sentence bio as specified -->
                 <div class="space-y-4 text-slate-300 text-base sm:text-lg leading-relaxed max-w-4xl">
                     <p class="p-4 rounded-xl bg-slate-900/50 border border-slate-800/80">
                         <span data-i18n="about_item1_label" class="text-white font-semibold">1. Kimman:</span> <span
@@ -282,9 +277,7 @@
                     </div>
                 </div>
 
-                <!-- Skill Grid with Badges & Icons -->
                 <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-                    <!-- HTML5 -->
                     <div
                         class="glass-card p-4 rounded-2xl flex items-center gap-3.5 group hover:bg-slate-800/80 transition-all">
                         <div
@@ -297,7 +290,6 @@
                         </div>
                     </div>
 
-                    <!-- CSS3 / Tailwind -->
                     <div
                         class="glass-card p-4 rounded-2xl flex items-center gap-3.5 group hover:bg-slate-800/80 transition-all">
                         <div
@@ -310,7 +302,6 @@
                         </div>
                     </div>
 
-                    <!-- JavaScript -->
                     <div
                         class="glass-card p-4 rounded-2xl flex items-center gap-3.5 group hover:bg-slate-800/80 transition-all">
                         <div
@@ -323,7 +314,6 @@
                         </div>
                     </div>
 
-                    <!-- ReactJS -->
                     <div
                         class="glass-card p-4 rounded-2xl flex items-center gap-3.5 group hover:bg-slate-800/80 transition-all">
                         <div
@@ -336,7 +326,6 @@
                         </div>
                     </div>
 
-                    <!-- Node.js / Backend -->
                     <div
                         class="glass-card p-4 rounded-2xl flex items-center gap-3.5 group hover:bg-slate-800/80 transition-all">
                         <div
@@ -349,7 +338,6 @@
                         </div>
                     </div>
 
-                    <!-- Figma -->
                     <div
                         class="glass-card p-4 rounded-2xl flex items-center gap-3.5 group hover:bg-slate-800/80 transition-all">
                         <div
@@ -362,7 +350,6 @@
                         </div>
                     </div>
 
-                    <!-- Git & GitHub -->
                     <div
                         class="glass-card p-4 rounded-2xl flex items-center gap-3.5 group hover:bg-slate-800/80 transition-all">
                         <div
@@ -375,7 +362,6 @@
                         </div>
                     </div>
 
-                    <!-- Database / Telegram API -->
                     <div
                         class="glass-card p-4 rounded-2xl flex items-center gap-3.5 group hover:bg-slate-800/80 transition-all">
                         <div
@@ -406,13 +392,49 @@
                     </div>
                 </div>
 
-                <!-- Projects Grid (3+ Projects) -->
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
 
-                    <!-- Project 1 -->
+                    <!-- Project 1: BemorOvozi (New) -->
                     <div class="glass-card rounded-2xl overflow-hidden flex flex-col justify-between group">
                         <div class="p-6 space-y-4">
-                            <!-- Visual Banner -->
+                            <div
+                                class="h-40 rounded-xl bg-gradient-to-br from-emerald-900/60 to-slate-900 border border-slate-700/60 flex items-center justify-center text-emerald-400 text-4xl relative overflow-hidden group-hover:scale-[1.02] transition-transform">
+                                <i class="fa-solid fa-heart-pulse"></i>
+                                <span
+                                    class="absolute top-3 right-3 px-2.5 py-1 rounded-md text-[10px] font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">HealthTech</span>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-white group-hover:text-brand-400 transition-colors">
+                                    BemorOvozi</h3>
+                                <p data-i18n="proj_bemor_desc" class="text-slate-400 text-sm mt-2 line-clamp-3">
+                                    BemorOvozi — sog‘liqni saqlash sohasida bemorlar uchun qulay muloqot va tibbiy
+                                    xizmatlardan foydalanish imkoniyatlarini yaxshilashga qaratilgan loyiha.
+                                </p>
+                            </div>
+                            <div class="flex flex-wrap gap-1.5 pt-2">
+                                <span
+                                    class="px-2 py-1 rounded bg-slate-800 text-[11px] font-medium text-slate-300">Healthcare</span>
+                                <span class="px-2 py-1 rounded bg-slate-800 text-[11px] font-medium text-slate-300">Web
+                                    App</span>
+                                <span
+                                    class="px-2 py-1 rounded bg-slate-800 text-[11px] font-medium text-slate-300">Social
+                                    Impact</span>
+                            </div>
+                        </div>
+
+                        <div
+                            class="px-6 py-4 border-t border-slate-800/80 bg-slate-900/40 flex items-center justify-end text-xs font-semibold">
+                            <a href="https://www.bemorovozi.uz/" target="_blank" rel="noopener"
+                                class="text-brand-400 hover:text-brand-300 flex items-center gap-1">
+                                <span data-i18n="proj_demo">Demo &amp; Tafsilot</span> <i
+                                    class="fa-solid fa-arrow-right text-[10px]"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Restaurant Telegram Bot -->
+                    <div class="glass-card rounded-2xl overflow-hidden flex flex-col justify-between group">
+                        <div class="p-6 space-y-4">
                             <div
                                 class="h-40 rounded-xl bg-gradient-to-br from-purple-900/60 to-slate-900 border border-slate-700/60 flex items-center justify-center text-purple-400 text-4xl relative overflow-hidden group-hover:scale-[1.02] transition-transform">
                                 <i class="fa-solid fa-robot"></i>
@@ -433,11 +455,11 @@
                                 <span
                                     class="px-2 py-1 rounded bg-slate-800 text-[11px] font-medium text-slate-300">Node.js</span>
                                 <span
-                                    class="px-2 py-1 rounded bg-slate-800 text-[11px] font-medium text-slate-300">node-telegram-bot-api</span>
+                                    class="px-2 py-1 rounded bg-slate-800 text-[11px] font-medium text-slate-300">Telegram
+                                    API</span>
                             </div>
                         </div>
 
-                        <!-- Card Action Links -->
                         <div
                             class="px-6 py-4 border-t border-slate-800/80 bg-slate-900/40 flex items-center justify-between text-xs font-semibold">
                             <a href="https://github.com/Islombek175/Chef_Food_Khiva_Bot" target="_blank" rel="noopener"
@@ -452,10 +474,9 @@
                         </div>
                     </div>
 
-                    <!-- Project 2 -->
+                    <!-- Project 3: Bitiruvchi Lentalar Premium -->
                     <div class="glass-card rounded-2xl overflow-hidden flex flex-col justify-between group">
                         <div class="p-6 space-y-4">
-                            <!-- Visual Banner -->
                             <div
                                 class="h-40 rounded-xl bg-gradient-to-br from-teal-900/60 to-slate-900 border border-slate-700/60 flex items-center justify-center text-teal-400 text-4xl relative overflow-hidden group-hover:scale-[1.02] transition-transform">
                                 <i class="fa-solid fa-graduation-cap"></i>
@@ -481,7 +502,6 @@
                             </div>
                         </div>
 
-                        <!-- Card Action Links -->
                         <div
                             class="px-6 py-4 border-t border-slate-800/80 bg-slate-900/40 flex items-center justify-between text-xs font-semibold">
                             <a href="https://github.com/Islombek175/Bitiruvchi-Lenta-Premium" target="_blank"
@@ -497,10 +517,9 @@
                         </div>
                     </div>
 
-                    <!-- Project 3 -->
+                    <!-- Project 4: Restaurant Web Application -->
                     <div class="glass-card rounded-2xl overflow-hidden flex flex-col justify-between group">
                         <div class="p-6 space-y-4">
-                            <!-- Visual Banner -->
                             <div
                                 class="h-40 rounded-xl bg-gradient-to-br from-blue-900/60 to-slate-900 border border-slate-700/60 flex items-center justify-center text-blue-400 text-4xl relative overflow-hidden group-hover:scale-[1.02] transition-transform">
                                 <i class="fa-solid fa-utensils"></i>
@@ -526,7 +545,6 @@
                             </div>
                         </div>
 
-                        <!-- Card Action Links -->
                         <div
                             class="px-6 py-4 border-t border-slate-800/80 bg-slate-900/40 flex items-center justify-between text-xs font-semibold">
                             <a href="https://github.com/Islombek175/Chef-Food-Khiva-Website" target="_blank"
@@ -562,11 +580,11 @@
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <!-- Maktab & Kurslar -->
+                    <!-- Ta'lim Dargohlari + SAT & Language Proficiencies (as requested) -->
                     <div class="glass-card p-6 rounded-2xl space-y-6">
                         <h3 class="text-lg font-bold text-white flex items-center gap-2 border-b border-slate-800 pb-3">
                             <i class="fa-solid fa-school text-brand-400"></i>
-                            <span data-i18n="edu_institutions_title">Ta'lim Dargohlari</span>
+                            <span data-i18n="edu_institutions_title">Ta'lim Dargohlari &amp; Akademik Ma'lumot</span>
                         </h3>
 
                         <div class="space-y-4">
@@ -580,13 +598,6 @@
                             </div>
 
                             <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800/80">
-                                <span data-i18n="edu_courses_badge" class="text-xs font-semibold text-accent-cyan">IT
-                                    DASTURLASH KURSLARI</span>
-                                <h4 class="text-white font-bold text-base mt-1">Full-Stack Web Development</h4>
-                                <p data-i18n="edu_courses_desc" class="text-xs text-slate-400 mt-1">HTML, CSS, JS,
-                                    Telegram Bot va Web loyihalar bo'yicha intensiv ta'lim</p>
-                            </div>
-                            <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800/80">
                                 <span data-i18n="edu_community_badge" class="text-xs font-semibold text-brand-400">IT
                                     COMMUNITY & TRAINING</span>
                                 <h4 data-i18n="edu_community_name" class="text-white font-bold text-base mt-1">"Muhammad
@@ -595,17 +606,8 @@
                                     learning community focused on advanced software engineering and modern technology
                                     skills in Uzbekistan</p>
                             </div>
-                        </div>
-                    </div>
 
-                    <!-- Sertifikatlar & Olimpiadalar -->
-                    <div class="glass-card p-6 rounded-2xl space-y-6">
-                        <h3 class="text-lg font-bold text-white flex items-center gap-2 border-b border-slate-800 pb-3">
-                            <i class="fa-solid fa-award text-amber-400"></i>
-                            <span data-i18n="edu_achievements_title">Yutuqlar &amp; Sertifikatlar</span>
-                        </h3>
-
-                        <div class="space-y-4">
+                            <!-- SAT Score Card moved here -->
                             <div
                                 class="p-4 rounded-xl bg-slate-900/60 border border-slate-800/80 flex items-start gap-3">
                                 <div class="p-2.5 rounded-lg bg-amber-500/10 text-amber-400 text-lg">
@@ -615,61 +617,38 @@
                                     <h4 data-i18n="edu_sat_title" class="text-white font-bold text-sm">SAT Natijasi:
                                         1340 Score</h4>
                                     <p data-i18n="edu_sat_desc" class="text-xs text-slate-400 mt-0.5">Matematika va
-                                        mantiqiy fikrlash bo mezonlar bo'yicha yuqori ball</p>
+                                        mantiqiy fikrlash bo'yicha yuqori ball</p>
                                 </div>
                             </div>
 
-                            <div
-                                class="p-4 rounded-xl bg-slate-900/60 border border-slate-800/80 flex items-start gap-3">
-                                <div class="p-2.5 rounded-lg bg-accent-purple/10 text-accent-purple text-lg">
-                                    <i class="fa-solid fa-trophy"></i>
-                                </div>
-                                <div>
-                                    <h4 data-i18n="edu_olympiad_title" class="text-white font-bold text-sm">IT Olimpiada
-                                        &amp; Xakatonlar</h4>
-                                    <p data-i18n="edu_olympiad_desc" class="text-xs text-slate-400 mt-0.5">Hududiy
-                                        dasturlash tanlovlarida muvaffaqiyatli ishtirok va sertifikatlar</p>
-                                </div>
-                            </div>
-
-                            <!-- Language Proficiency Component -->
-                            <div class="glass-card p-6 rounded-2xl space-y-4">
-                                <div class="flex items-center gap-2.5 border-b border-slate-800/80 pb-3">
+                            <!-- Language Proficiency Component moved here -->
+                            <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800/80 space-y-3">
+                                <div class="flex items-center gap-2">
                                     <div
-                                        class="w-8 h-8 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-sm border border-emerald-500/20">
+                                        class="w-7 h-7 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-xs border border-emerald-500/20">
                                         <i class="fa-solid fa-language"></i>
                                     </div>
-                                    <h3 data-i18n="language_proficiency_title"
-                                        class="text-lg font-bold text-white tracking-tight">Language Proficiency</h3>
+                                    <h4 data-i18n="language_proficiency_title"
+                                        class="text-sm font-bold text-white tracking-tight">Language Proficiency</h4>
                                 </div>
-
-                                <!-- Language Badges -->
-                                <div class="flex flex-wrap gap-2.5 pt-1">
-                                    <!-- Uzbek -->
+                                <div class="flex flex-wrap gap-2 pt-1">
                                     <div
-                                        class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900/90 border border-slate-700/80 hover:border-brand-500/40 transition-all text-xs sm:text-sm font-medium text-slate-200 shadow-sm group">
-                                        <span
-                                            class="w-2 h-2 rounded-full bg-emerald-400 group-hover:scale-125 transition-transform"></span>
+                                        class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900/90 border border-slate-700/80 text-xs font-medium text-slate-200">
+                                        <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
                                         <span><span data-i18n="language_uzbek_name">Uzbek</span> <span
                                                 class="text-slate-400 font-normal">· <span
                                                     data-i18n="language_uzbek_level">Native</span></span></span>
                                     </div>
-
-                                    <!-- Russian -->
                                     <div
-                                        class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900/90 border border-slate-700/80 hover:border-brand-500/40 transition-all text-xs sm:text-sm font-medium text-slate-200 shadow-sm group">
-                                        <span
-                                            class="w-2 h-2 rounded-full bg-cyan-400 group-hover:scale-125 transition-transform"></span>
+                                        class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900/90 border border-slate-700/80 text-xs font-medium text-slate-200">
+                                        <span class="w-2 h-2 rounded-full bg-cyan-400"></span>
                                         <span><span data-i18n="language_russian_name">Russian</span> <span
                                                 class="text-slate-400 font-normal">· <span
                                                     data-i18n="language_russian_level">Advanced</span></span></span>
                                     </div>
-
-                                    <!-- English -->
                                     <div
-                                        class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900/90 border border-slate-700/80 hover:border-brand-500/40 transition-all text-xs sm:text-sm font-medium text-slate-200 shadow-sm group">
-                                        <span
-                                            class="w-2 h-2 rounded-full bg-accent-purple group-hover:scale-125 transition-transform"></span>
+                                        class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900/90 border border-slate-700/80 text-xs font-medium text-slate-200">
+                                        <span class="w-2 h-2 rounded-full bg-accent-purple"></span>
                                         <span><span data-i18n="language_english_name">English</span> <span
                                                 class="text-slate-400 font-normal">· <span
                                                     data-i18n="language_english_level">Upper
@@ -677,6 +656,83 @@
                                     </div>
                                 </div>
                             </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Yutuqlar (Achievements in Exact Specified Order) -->
+                    <div class="glass-card p-6 rounded-2xl space-y-6">
+                        <h3 class="text-lg font-bold text-white flex items-center gap-2 border-b border-slate-800 pb-3">
+                            <i class="fa-solid fa-award text-amber-400"></i>
+                            <span data-i18n="edu_achievements_title">Yutuqlar &amp; Sertifikatlar</span>
+                        </h3>
+
+                        <div class="space-y-4">
+                            <!-- 1st: 3rd Place — National AI Hackathon: Khorezm (with link) -->
+                            <a href="https://t.me/mtkrmv07" target="_blank" rel="noopener"
+                                class="p-4 rounded-xl bg-slate-900/60 border border-slate-800/80 flex items-start gap-3.5 hover:border-brand-500/50 transition-all block group">
+                                <div
+                                    class="p-2.5 rounded-lg bg-amber-500/10 text-amber-400 text-lg group-hover:scale-110 transition-transform">
+                                    <i class="fa-solid fa-trophy"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <div class="flex items-center justify-between">
+                                        <h4 data-i18n="ach_1_title"
+                                            class="text-white font-bold text-sm group-hover:text-brand-400 transition-colors">
+                                            3rd Place — National AI Hackathon: Khorezm</h4>
+                                        <i class="fa-solid fa-arrow-up-right-from-square text-xs text-slate-500"></i>
+                                    </div>
+                                    <p data-i18n="ach_1_desc" class="text-xs text-slate-400 mt-1">Jamoaviy sun'iy
+                                        intellekt tanlovida sovrinli 3-o'rin va maxsus sertifikat.</p>
+                                </div>
+                            </a>
+
+                            <!-- 2nd: 3rd Place — city olympic math -->
+                            <div
+                                class="p-4 rounded-xl bg-slate-900/60 border border-slate-800/80 flex items-start gap-3.5">
+                                <div class="p-2.5 rounded-lg bg-accent-purple/10 text-accent-purple text-lg">
+                                    <i class="fa-solid fa-medal"></i>
+                                </div>
+                                <div>
+                                    <h4 data-i18n="ach_2_title" class="text-white font-bold text-sm">3rd Place — City
+                                        Olympic Math</h4>
+                                    <p data-i18n="ach_2_desc" class="text-xs text-slate-400 mt-1">Shahar matematika
+                                        olimpiadasida 3-o'rin sohibi.</p>
+                                </div>
+                            </div>
+
+                            <!-- 3rd: 3rd Place — city olympic physics -->
+                            <div
+                                class="p-4 rounded-xl bg-slate-900/60 border border-slate-800/80 flex items-start gap-3.5">
+                                <div class="p-2.5 rounded-lg bg-sky-500/10 text-sky-400 text-lg">
+                                    <i class="fa-solid fa-award"></i>
+                                </div>
+                                <div>
+                                    <h4 data-i18n="ach_3_title" class="text-white font-bold text-sm">3rd Place — City
+                                        Olympic Physics</h4>
+                                    <p data-i18n="ach_3_desc" class="text-xs text-slate-400 mt-1">Shahar fizika
+                                        olimpiadasi g'olibi va sovrindori.</p>
+                                </div>
+                            </div>
+
+                            <!-- 4th: active participation on hackathons and ideatons (with link) -->
+                            <a href="https://github.com/Islombek175" target="_blank" rel="noopener"
+                                class="p-4 rounded-xl bg-slate-900/60 border border-slate-800/80 flex items-start gap-3.5 hover:border-brand-500/50 transition-all block group">
+                                <div
+                                    class="p-2.5 rounded-lg bg-emerald-500/10 text-emerald-400 text-lg group-hover:scale-110 transition-transform">
+                                    <i class="fa-solid fa-laptop-code"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <div class="flex items-center justify-between">
+                                        <h4 data-i18n="ach_4_title"
+                                            class="text-white font-bold text-sm group-hover:text-brand-400 transition-colors">
+                                            Active Participation on Hackathons and Ideatons</h4>
+                                        <i class="fa-solid fa-arrow-up-right-from-square text-xs text-slate-500"></i>
+                                    </div>
+                                    <p data-i18n="ach_4_desc" class="text-xs text-slate-400 mt-1">Turli xil xakatonlar
+                                        va ideatonlarda faol ishtirok etib, innovatsion g'oyalar taqdim etganman.</p>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -698,9 +754,7 @@
                         orqali menga yozishingiz mumkin.
                     </p>
 
-                    <!-- Contact Cards Grid -->
                     <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-4">
-                        <!-- Email -->
                         <a href="mailto:matkaimovislambek@gmail.com"
                             class="p-4 rounded-2xl bg-slate-900/80 border border-slate-800 hover:border-brand-500/50 hover:scale-105 transition-all text-center group">
                             <div
@@ -711,7 +765,6 @@
                             <span class="text-[11px] text-slate-400">matkaimovislambek@gmail.com</span>
                         </a>
 
-                        <!-- Telegram -->
                         <a href="https://t.me/mtkrmv07" target="_blank" rel="noopener"
                             class="p-4 rounded-2xl bg-slate-900/80 border border-slate-800 hover:border-sky-500/50 hover:scale-105 transition-all text-center group">
                             <div
@@ -722,7 +775,6 @@
                             <span class="text-[11px] text-slate-400">@mtkrmv07</span>
                         </a>
 
-                        <!-- GitHub -->
                         <a href="https://github.com/Islombek175" target="_blank" rel="noopener"
                             class="p-4 rounded-2xl bg-slate-900/80 border border-slate-800 hover:border-purple-500/50 hover:scale-105 transition-all text-center group">
                             <div
@@ -733,7 +785,6 @@
                             <span class="text-[11px] text-slate-400">github.com/islombek175</span>
                         </a>
 
-                        <!-- LinkedIn -->
                         <a href="https://www.linkedin.com/in/islombek-matkarimov-7a0500357/?isSelfProfile=true"
                             target="_blank" rel="noopener"
                             class="p-4 rounded-2xl bg-slate-900/80 border border-slate-800 hover:border-blue-500/50 hover:scale-105 transition-all text-center group">
@@ -752,7 +803,7 @@
     </main>
 
     <footer class="border-t border-slate-800/80 bg-[#050811] py-8 text-center text-xs text-slate-500 relative z-10">
-        <div class="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
             <p data-i18n="footer_copyright">&copy; 2026 Islambek Portfolio. Barcha huquqlar himoyalangan.</p>
             <div class="flex gap-4">
                 <a href="#hero" class="hover:text-slate-300"><span data-i18n="footer_back_top">Yuqoriga qaytish</span>
@@ -761,24 +812,6 @@
         </div>
     </footer>
 
-    <div id="project-modal"
-        class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden flex items-center justify-center p-4">
-        <div
-            class="glass-card max-w-lg w-full p-6 rounded-2xl relative space-y-4 border border-slate-700 animate-in fade-in zoom-in duration-200">
-            <button onclick="closeProjectModal()" class="absolute top-4 right-4 text-slate-400 hover:text-white p-2">
-                <i class="fa-solid fa-xmark text-xl"></i>
-            </button>
-            <h3 id="modal-title" class="text-xl font-bold text-white pr-8">Loyiha Nomi</h3>
-            <p id="modal-desc" class="text-slate-300 text-sm leading-relaxed">Loyiha tafsilotlari shu yerda ko'rinadi.
-            </p>
-            <div class="pt-4 flex justify-end">
-                <button onclick="closeProjectModal()"
-                    class="px-5 py-2 rounded-xl bg-brand-500 text-white font-semibold text-sm hover:bg-brand-600 transition-colors">
-                    Tushunarli
-                </button>
-            </div>
-        </div>
-    </div>
     <script src="script.js"></script>
 
 </body>

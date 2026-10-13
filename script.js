@@ -1,5 +1,3 @@
-// Tailwind CSS configuration
-
 tailwind.config = {
 	theme: {
 		extend: {
@@ -36,14 +34,15 @@ tailwind.config = {
 	},
 }
 
-// Mobile menu toggle
 const menuBtn = document.getElementById('mobile-menu-btn')
 const mobileMenu = document.getElementById('mobile-menu')
 const mobileLinks = document.querySelectorAll('.mobile-link')
 
-menuBtn.addEventListener('click', () => {
-	mobileMenu.classList.toggle('hidden')
-})
+if (menuBtn && mobileMenu) {
+	menuBtn.addEventListener('click', () => {
+		mobileMenu.classList.toggle('hidden')
+	})
+}
 
 mobileLinks.forEach(link => {
 	link.addEventListener('click', () => {
@@ -51,18 +50,6 @@ mobileLinks.forEach(link => {
 	})
 })
 
-// Project Modal logic
-function openProjectModal(title, description) {
-	document.getElementById('modal-title').innerText = title
-	document.getElementById('modal-desc').innerText = description
-	document.getElementById('project-modal').classList.remove('hidden')
-}
-
-function closeProjectModal() {
-	document.getElementById('project-modal').classList.add('hidden')
-}
-
-// Fixed navbar enhancement & active nav-link highlighting on scroll
 const navbar = document.getElementById('navbar')
 const sections = document.querySelectorAll('section[id]')
 const desktopNavLinks = document.querySelectorAll('.nav-link')
@@ -70,7 +57,6 @@ const desktopNavLinks = document.querySelectorAll('.nav-link')
 window.addEventListener('scroll', () => {
 	const scrollPos = window.scrollY
 
-	// Add enhanced background/shadow when scrolled down
 	if (navbar) {
 		if (scrollPos > 30) {
 			navbar.classList.add('scrolled')
@@ -79,7 +65,6 @@ window.addEventListener('scroll', () => {
 		}
 	}
 
-	// Update active nav-link according to current visible section
 	let currentSectionId = ''
 	sections.forEach(section => {
 		const sectionTop = section.offsetTop - 120
@@ -99,9 +84,6 @@ window.addEventListener('scroll', () => {
 	})
 })
 
-// ==========================================
-// Multi-Language (UZ / EN) Switcher
-// ==========================================
 const translations = {
 	uz: {
 		nav_hero: 'Hero',
@@ -109,7 +91,7 @@ const translations = {
 		nav_about: 'Men Haqimda',
 		nav_skills: "Ko'nikmalar",
 		nav_projects: 'Loyihalar',
-		nav_education: "Ta'lim",
+		nav_education: "Ta'lim va Yutuqlar",
 		nav_education_mob: "Ta'lim va Yutuqlar",
 		nav_contact: 'Aloqa',
 		hero_badge: 'HERO • BOSH QISM',
@@ -143,6 +125,8 @@ const translations = {
 		skill_db_desc: "Ma'lumotlar bazasi",
 		projects_badge: "BO'LIM 4",
 		projects_title: 'Loyihalar',
+		proj_bemor_desc:
+			'BemorOvozi — sog‘liqni saqlash sohasida bemorlar uchun qulay muloqot va tibbiy xizmatlardan foydalanish imkoniyatlarini yaxshilashga qaratilgan loyiha.',
 		proj1_desc:
 			"Restoran uchun Telegram bot (@chef_food_xiva_bot). Menyu ko'rish, buyurtma berish va boshqarish imkoniyatlarini taqdim etadi.",
 		proj2_desc:
@@ -152,13 +136,10 @@ const translations = {
 		proj_demo: 'Demo & Tafsilot',
 		edu_badge: "BO'LIM 5",
 		edu_title: "Ta'lim va Yutuqlar",
-		edu_institutions_title: "Ta'lim Dargohlari",
+		edu_institutions_title: "Ta'lim Dargohlari & Akademik Ma'lumot",
 		edu_school_badge: "O'RTA TA'LIM",
 		edu_school_name: "Xiva shahar 3-son o'rta ta'lim maktabi",
 		edu_school_desc: "A'lo baholar va matematika-ingliz tili yo'nalishi",
-		edu_courses_badge: 'IT DASTURLASH KURSLARI',
-		edu_courses_desc:
-			"HTML, CSS, JS, Telegram Bot va Web loyihalar bo'yicha intensiv ta'lim",
 		edu_community_badge: "IT HAMJAMIYATI VA TA'LIM",
 		edu_community_name: '"Muhammad Al Xorazmiy vorislari" IT Park',
 		edu_community_desc:
@@ -166,10 +147,6 @@ const translations = {
 		edu_achievements_title: 'Yutuqlar & Sertifikatlar',
 		edu_sat_title: 'SAT Natijasi: 1340 Score',
 		edu_sat_desc: "Matematika va mantiqiy fikrlash bo'yicha yuqori ball",
-		edu_olympiad_title: 'IT Olimpiada & Xakatonlar',
-		edu_olympiad_desc:
-			'Hududiy dasturlash tanlovlarida muvaffaqiyatli ishtirok va sertifikatlar',
-		edu_english_title: 'Ingliz Tili (IELTS Tayyorgarlik)',
 		language_proficiency_title: 'Til bilish darajasi',
 		language_uzbek_name: "O'zbek tili",
 		language_uzbek_level: 'Ona tili',
@@ -177,6 +154,16 @@ const translations = {
 		language_russian_level: 'Yuqori',
 		language_english_name: 'Ingliz tili',
 		language_english_level: "O'rta yuqori",
+		ach_1_title: '3-o‘rin — Milliy AI Hackathon: Xorazm',
+		ach_1_desc:
+			"Jamoaviy sun'iy intellekt tanlovida sovrinli 3-o'rin va maxsus sertifikat.",
+		ach_2_title: '3-o‘rin — Shahar matematika olimpiadasi',
+		ach_2_desc: "Shahar matematika olimpiadasida 3-o'rin sohibi.",
+		ach_3_title: '3-o‘rin — Shahar fizika olimpiadasi',
+		ach_3_desc: "Shahar fizika olimpiadasi g'olibi va sovrindori.",
+		ach_4_title: 'Xakatonlar va ideatonlarda faol ishtirok',
+		ach_4_desc:
+			"Turli xil xakatonlar va ideatonlarda faol ishtirok etib, innovatsion g'oyalar taqdim etganman.",
 		contact_badge: "BO'LIM 6 • ALOQA",
 		contact_title: "Men bilan bog'laning",
 		contact_desc:
@@ -191,7 +178,7 @@ const translations = {
 		nav_about: 'About Me',
 		nav_skills: 'Skills',
 		nav_projects: 'Projects',
-		nav_education: 'Education',
+		nav_education: 'Education & Awards',
 		nav_education_mob: 'Education & Awards',
 		nav_contact: 'Contact',
 		hero_badge: 'HERO • INTRODUCTION',
@@ -225,6 +212,8 @@ const translations = {
 		skill_db_desc: 'Databases',
 		projects_badge: 'SECTION 4',
 		projects_title: 'Projects',
+		proj_bemor_desc:
+			'BemorOvozi — A project aimed at improving communication and access to medical services for patients in the healthcare sector.',
 		proj1_desc:
 			'Telegram bot for restaurant (@chef_food_xiva_bot). Features food ordering, menu viewing, and administration.',
 		proj2_desc:
@@ -234,24 +223,17 @@ const translations = {
 		proj_demo: 'Demo & Details',
 		edu_badge: 'SECTION 5',
 		edu_title: 'Education & Achievements',
-		edu_institutions_title: 'Education',
+		edu_institutions_title: 'Education & Academic Info',
 		edu_school_badge: 'SECONDARY EDUCATION',
 		edu_school_name: 'Khiva School No. 3',
 		edu_school_desc: 'Honors student, specialized in mathematics and English',
-		edu_courses_badge: 'IT & CODING COURSES',
-		edu_courses_desc:
-			'Intensive training in HTML, CSS, JS, Telegram Bots, and Web projects',
 		edu_community_badge: 'IT COMMUNITY & TRAINING',
-		edu_community_name: '"Heirs of Muhammad al-Khwarizmi" IT Park',
+		edu_community_name: '"Muhammad al-Khwarizmi" IT Park',
 		edu_community_desc:
 			'An IT learning community in Uzbekistan focused on advanced software engineering and modern technology skills.',
 		edu_achievements_title: 'Achievements & Certificates',
 		edu_sat_title: 'SAT Score: 1340',
 		edu_sat_desc: 'High score in mathematics and analytical reasoning',
-		edu_olympiad_title: 'IT Olympiads & Hackathons',
-		edu_olympiad_desc:
-			'Successful participation and certificates in regional coding competitions',
-		edu_english_title: 'English Proficiency (IELTS Prep)',
 		language_proficiency_title: 'Language Proficiency',
 		language_uzbek_name: 'Uzbek',
 		language_uzbek_level: 'Native',
@@ -259,6 +241,16 @@ const translations = {
 		language_russian_level: 'Advanced',
 		language_english_name: 'English',
 		language_english_level: 'Upper Intermediate',
+		ach_1_title: '3rd Place — National AI Hackathon: Khorezm',
+		ach_1_desc:
+			'Won 3rd place and a special certificate in the regional AI hackathon.',
+		ach_2_title: '3rd Place — City Olympic Math',
+		ach_2_desc: '3rd place holder in the city mathematics olympiad.',
+		ach_3_title: '3rd Place — City Olympic Physics',
+		ach_3_desc: 'Award winner in the city physics olympiad.',
+		ach_4_title: 'Active Participation on Hackathons and Ideatons',
+		ach_4_desc:
+			'Actively participated in various hackathons and ideathons, presenting innovative solutions.',
 		contact_badge: 'SECTION 6 • CONTACT',
 		contact_title: 'Get In Touch',
 		contact_desc:
@@ -272,10 +264,8 @@ function setLanguage(lang) {
 	const currentLang = translations[lang] ? lang : 'uz'
 	const dict = translations[currentLang]
 
-	// Update HTML lang attribute
 	document.documentElement.setAttribute('lang', currentLang)
 
-	// Update all elements with data-i18n
 	document.querySelectorAll('[data-i18n]').forEach(el => {
 		const key = el.getAttribute('data-i18n')
 		if (dict[key]) {
@@ -283,7 +273,6 @@ function setLanguage(lang) {
 		}
 	})
 
-	// Update active state on all language switcher buttons
 	document.querySelectorAll('.lang-btn').forEach(btn => {
 		if (btn.getAttribute('data-lang') === currentLang) {
 			btn.classList.add('active')
@@ -292,7 +281,6 @@ function setLanguage(lang) {
 		}
 	})
 
-	// Persist choice in localStorage
 	try {
 		localStorage.setItem('site_lang', currentLang)
 	} catch (e) {
@@ -300,7 +288,6 @@ function setLanguage(lang) {
 	}
 }
 
-// Bind click events on all language buttons (desktop and mobile)
 document.querySelectorAll('.lang-btn').forEach(btn => {
 	btn.addEventListener('click', () => {
 		const chosenLang = btn.getAttribute('data-lang')
@@ -308,7 +295,6 @@ document.querySelectorAll('.lang-btn').forEach(btn => {
 	})
 })
 
-// Initialize language from saved preference or default to Uzbek
 const savedLang = (() => {
 	try {
 		return localStorage.getItem('site_lang') || 'uz'
